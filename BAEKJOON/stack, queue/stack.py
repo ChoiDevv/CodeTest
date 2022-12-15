@@ -1,5 +1,6 @@
 # 스택
 
+import sys
 from collections import deque
 
 def push(stack, number):
@@ -25,10 +26,10 @@ def top(stack):
     return stack[len(stack) - 1]
 
 stack = deque()
-count = int(input())
+count = int(sys.stdin.readline())
 
 for i in range(count):
-    command = input().split()
+    command = sys.stdin.readline().split()
 
     if command[0] == "push":
         push(stack, int(command[1]))
