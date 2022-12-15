@@ -3,9 +3,9 @@
 import sys
 
 n = int(sys.stdin.readline())
-count = 0
 
 for i in range(n):
+    count = 0
     parenthesis = input()
 
     for char in parenthesis:
