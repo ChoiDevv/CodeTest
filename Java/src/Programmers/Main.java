@@ -7,10 +7,12 @@ public class Main {
 
     public static void main(String[] args) {
         AppearOnce appearOnce = new AppearOnce();
+        System.out.println("한 번만 등장한 문자");
         System.out.println(appearOnce.appearOnce("abcabcadc"));
     }
 }
 
+// 한 번만 등장한 문자
 class AppearOnce {
     public String appearOnce(String s) {
         String answer = "";
