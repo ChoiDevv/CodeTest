@@ -1,9 +1,6 @@
 package Programmers;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -68,3 +65,20 @@ class ArrayRotation {
         return answer;
     }
 }
+
+// 외계행성의 나이
+class Exoplanet {
+    public String exoPlanet(int age) {
+        String answer = "";
+        String[] alphabet_list = {"a", "b", "c", "d", "e", "f", "g", "h" , "i", "j"};
+
+        String[] string_age_list = String.valueOf(age).split("");
+
+        for (int i = 0; i < string_age_list.length; i++) {
+            answer += alphabet_list[Integer.parseInt(string_age_list[i])];
+        }
+        return answer;
+    }
+}
+
+//
