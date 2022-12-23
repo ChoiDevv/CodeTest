@@ -70,7 +70,7 @@ class ArrayRotation {
 class Exoplanet {
     public String exoPlanet(int age) {
         String answer = "";
-        String[] alphabet_list = {"a", "b", "c", "d", "e", "f", "g", "h" , "i", "j"};
+        String[] alphabet_list = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j"};
 
         String[] string_age_list = String.valueOf(age).split("");
 
