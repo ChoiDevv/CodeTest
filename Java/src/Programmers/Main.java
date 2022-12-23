@@ -80,3 +80,30 @@ class Exoplanet {
         return answer;
     }
 }
+
+// 피자 나눠 먹기 (2)
+class SharePizzaTwo {
+    public int sharePizzaTwo(int n) {
+        int pizza = 6;
+
+        while (pizza % n != 0) {
+            pizza += 6;
+        }
+        return pizza / 6;
+    }
+}
+
+// 최댓값 만들기 (2)
+class MakeMaxNumberTwo {
+    public int makeMaxNumberTwo(int[] numbers) {
+        int answer = 0;
+        Arrays.sort(numbers);
+
+        if (numbers[0] * numbers[1] > numbers[numbers.length - 1] * numbers[numbers.length - 2]) {
+            answer = numbers[0] * numbers[1];
+        } else {
+            answer = numbers[numbers.length - 1] * numbers[numbers.length - 2];
+        }
+        return answer;
+    }
+}
