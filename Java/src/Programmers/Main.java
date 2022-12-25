@@ -5,7 +5,8 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-
+        ThreeSixNine threeSixNine = new ThreeSixNine();
+        System.out.println(threeSixNine.threeSixNine(29423));
     }
 }
 
@@ -103,6 +104,21 @@ class MakeMaxNumberTwo {
             answer = numbers[0] * numbers[1];
         } else {
             answer = numbers[numbers.length - 1] * numbers[numbers.length - 2];
+        }
+        return answer;
+    }
+}
+
+// 369 게임
+class ThreeSixNine {
+    public int threeSixNine(int order) {
+        int answer = 0;
+
+        String[] order_string = String.valueOf(order).split("");
+        for (int i = 0; i < order_string.length; i++) {
+            if (Objects.equals(order_string[i], "3") || Objects.equals(order_string[i], "6") || Objects.equals(order_string[i], "9")) {
+                answer++;
+            }
         }
         return answer;
     }
