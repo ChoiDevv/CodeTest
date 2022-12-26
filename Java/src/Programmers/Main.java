@@ -2,11 +2,12 @@ package Programmers;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
-        ThreeSixNine threeSixNine = new ThreeSixNine();
-        System.out.println(threeSixNine.threeSixNine(29423));
+        MorseCode morseCode = new MorseCode();
+        System.out.println(morseCode.morseCode(".... . .-.. .-.. ---"));
     }
 }
 
@@ -120,6 +121,107 @@ class ThreeSixNine {
                 answer++;
             }
         }
+        return answer;
+    }
+}
+
+// 영어가 싫어요
+class HateEnglish {
+    public long hateEnglish(String numbers) {
+        String answer = "";
+
+        answer = numbers.replace("zero", "0")
+                .replace("one", "1")
+                .replace("two", "2")
+                .replace("three", "3")
+                .replace("four", "4")
+                .replace("five", "5")
+                .replace("six", "6")
+                .replace("seven", "7")
+                .replace("eight", "8")
+                .replace("nine", "9");
+
+        return Long.parseLong(answer);
+    }
+}
+
+// 합성수 찾기
+class CompositeNumber {
+    public int compositeNumber(int n) {
+        int answer = 0;
+
+        for (int i = 1; i <= n; i++) {
+            int count = 0;
+            for (int j = 1; j * j <= i; j++) {
+                if (j * j == i) {
+                    count++;
+                }
+                else if (i % j == 0) {
+                    count += 2;
+                }
+            }
+            if (count >= 3) {
+                answer++;
+            }
+        }
+        return answer;
+    }
+}
+
+// 중복된 문자 제거
+class DuplicatedWordRemove {
+    public String duplicatedWordRemove(String my_string) {
+        String answer = "";
+        String[] answer_array = my_string.split("");
+
+        for (String word: answer_array) {
+            if (!answer.contains(word)) {
+                answer += word;
+            }
+        }
+        return answer;
+    }
+}
+
+// 모스부호 (1)
+class MorseCode {
+    public String morseCode(String letter) {
+        String answer = "";
+        Map<String, String> morse = Stream.of(new String[][] {
+                {".-", "a"},
+                {"-...", "b"},
+                {"-.-.", "c"},
+                {"-..", "d"},
+                {".", "e"},
+                {"..-.", "f"},
+                {"--.", "g"},
+                {"....", "h"},
+                {"..", "i"},
+                {".---", "j"},
+                {"-.-", "k"},
+                {".-..", "l"},
+                {"--", "m"},
+                {"-.", "n"},
+                {"---", "o"},
+                {".--.", "p"},
+                {"--.-", "q"},
+                {".-.", "r"},
+                {"...", "s"},
+                {"-", "t"},
+                {"..-", "u"},
+                {"...-", "v"},
+                {".--", "w"},
+                {"-..-", "x"},
+                {"-.--", "y"},
+                {"--..", "z"}
+        }).collect(Collectors.toMap(item -> item[0], item -> item[1]));
+
+        String[] letter_array = letter.split(" ");
+
+        for (String word: letter_array) {
+            answer += morse.get(word);
+        }
+
         return answer;
     }
 }
