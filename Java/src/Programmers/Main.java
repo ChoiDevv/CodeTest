@@ -2,12 +2,11 @@ package Programmers;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
-        MorseCode morseCode = new MorseCode();
-        System.out.println(morseCode.morseCode(".... . .-.. .-.. ---"));
     }
 }
 
@@ -222,6 +221,63 @@ class MorseCode {
             answer += morse.get(word);
         }
 
+        return answer;
+    }
+}
+
+// 팩토리얼
+class Factorial {
+    public int factorial(int n) {
+        int answer = 0;
+
+        for (int i = 1; i <= 10; i++) {
+            if (calculate(i) <= n) {
+                answer++;
+            }
+        }
+        return answer;
+    }
+
+    int calculate(int n) {
+        if (n <= 1) {
+            return 1;
+        }
+        return calculate(n - 1) * n;
+    }
+}
+
+// A로 B 만들기
+class MakeAtoB {
+    public int makeAtoB(String before, String after) {
+        int answer = 0;
+        String[] before_array = before.split("");
+
+        for (String word: before_array) {
+            if (after.contains(word)) {
+                after = after.replaceFirst(word, "");
+            }
+        }
+
+        if (after.equals("")) {
+            answer = 1;
+        } else {
+            answer = 0;
+        }
+        return answer;
+    }
+}
+
+// 2차원으로 만들기
+class MakeTwoDimensional {
+    public List<int[]> makeTwoDimensional(int[] num_list, int n) {
+        List<int[]> answer = new ArrayList<>();
+        int start = 0;
+
+        for (int i = n; i <= num_list.length; i += n) {
+            int[] slice_num_list = IntStream.range(start, i).map(idx -> num_list[idx]).toArray();
+            answer.add(slice_num_list);
+            start = i;
+        }
         return answer;
     }
 }
