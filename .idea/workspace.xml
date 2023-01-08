@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a753443-ccb0-4328-82d6-c29201a06c64" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python/This_is_code_test/realization/time.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/This_is_code_test/greedy_another_solution/number_card_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/This_is_code_test/greedy/another_number_card_game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/This_is_code_test/greedy_another_solution/the_law_of_large_numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/This_is_code_test/greedy/another_the_law_of_large_numbers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,35 @@
       <recent name="C:\Users\82107\Desktop\Repo\CodeTest\Python\This_is_code_test\greedy" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="up_down_left_right" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CodeTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/This_is_code_test/realization" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/This_is_code_test/realization/up_down_left_right.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.up_down_left_right" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,6 +86,10 @@
       <workItem from="1672841948206" duration="1829000" />
       <workItem from="1672928528743" duration="1036000" />
       <workItem from="1672930579608" duration="598000" />
+      <workItem from="1672934799605" duration="440000" />
+      <workItem from="1673019974431" duration="531000" />
+      <workItem from="1673023278398" duration="2282000" />
+      <workItem from="1673156058405" duration="1378000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1672845482583</created>
@@ -70,7 +105,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672928600454</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1672935024372</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672935024372</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit">
+      <created>1673025327666</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673025327667</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,5 +139,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CodeTest$up_down_left_right.coverage" NAME="up_down_left_right Coverage Results" MODIFIED="1673025306795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/This_is_code_test/realization" />
   </component>
 </project>
