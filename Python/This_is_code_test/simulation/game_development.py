@@ -37,7 +37,7 @@ while True:
         mx = x - dx[direction]
         my = y - dy[direction]
 
-        if visited_node[my][my] == 0:
+        if visited_node[mx][my] == 0:
             x, y = mx, my
         else:
             break
