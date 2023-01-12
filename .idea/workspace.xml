@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a753443-ccb0-4328-82d6-c29201a06c64" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/Python/This_is_code_test/realization/a_royal_knight.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python/Practice/dfs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +41,29 @@
       <recent name="C:\Users\82107\Desktop\Repo\CodeTest\Python\This_is_code_test\greedy" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.time">
+  <component name="RunManager" selected="Python.dfs">
+    <configuration name="dfs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CodeTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/Practice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/Practice/dfs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="time" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CodeTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,6 +110,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dfs" />
         <item itemvalue="Python.time" />
         <item itemvalue="Python.up_down_left_right" />
       </list>
@@ -111,6 +134,9 @@
       <workItem from="1673019974431" duration="531000" />
       <workItem from="1673023278398" duration="2282000" />
       <workItem from="1673156058405" duration="2227000" />
+      <workItem from="1673359811123" duration="1702000" />
+      <workItem from="1673479517005" duration="1686000" />
+      <workItem from="1673506546435" duration="4484000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1672845482583</created>
@@ -147,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673162441191</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit">
+      <created>1673361446153</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673361446153</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
